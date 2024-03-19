@@ -1,18 +1,18 @@
-class QuestionModel {
+class Question {
     constructor(text, options) {
         this.text = text;
         this.options = options;
     }
 }
 
-class QuizModel {
+class Quiz {
     constructor() {
         this.questions = [];
         this.currentQuestionIndex = 0;
     }
 
-    addQuestion(question) {
-        this.questions.push(question);
+    addQuestion(text, options) {
+        this.questions.push(new Question(text, options));
     }
 
     getCurrentQuestion() {
@@ -34,4 +34,4 @@ class QuizModel {
     }
 }
 
-export { QuestionModel, QuizModel };
+const quiz = new Quiz();
