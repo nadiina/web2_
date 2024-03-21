@@ -29,6 +29,5 @@ document.getElementById("editProfileButton").addEventListener("click", function(
     document.getElementById("email").value = profileModel.email;
     document.getElementById("gender").value = profileModel.gender;
     document.getElementById("dob").value = profileModel.dob;
-
     document.getElementById("editProfileForm").classList.toggle("d-none");
 });
